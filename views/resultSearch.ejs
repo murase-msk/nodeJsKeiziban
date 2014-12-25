@@ -1,0 +1,36 @@
+<!DOCTYPE html><!-- ドキュメントタイプを宣言する(html5) -->
+	<head>
+		<title>resultSearch</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body>
+		検索結果
+		<br>
+		<p>ヒットしたスレッド一覧</p>
+		<table border="1" id = "allThread">
+			<tr>
+				<th>トピック</th>
+				<th>投稿者</th>
+			</tr>
+			<% for (var i=0; i<data.length; i++){ %>
+			<tr>
+				<td>
+					<a href="/oneThread?title=<%= data[i].title %>">
+					<% for (var j=0; j<data[i].splitWordBySearchWord.length; j++){ %>
+						<%= data[i].splitWordBySearchWord[j] %>
+						<% if (j < data[i].splitWordBySearchWord.length - 1){ %>
+							<span style="background-color: #ffff00">
+							<%= titleHightLight %>
+							</span>
+						<% } %>
+					<% } %>
+					</a>
+				</td>
+				<td>
+					<%= data[i].user_name %>
+				</td>
+			</tr>
+			<% } %>
+		</table>
+	<body>
+</html>

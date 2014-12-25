@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/** スレッド一覧でスレッド名の幅を設定 */
+table#allThread tr td:first-child {
+	table-layout: fixed;
+	width: 300px;
+	}
+table#allThread tr td:nth-child(2) {
+	table-layout: fixed;
+	width: 100px;
+	}
+
+/** 単一スレッドでスレッド名の幅を設定 */
+table#oneThread tr td:first-child {
+	table-layout: fixed;
+	width: 300px;
+	}
+table#oneThread tr td:nth-child(2) {
+	table-layout: fixed;
+	width: 100px;
+	}
+
+
+

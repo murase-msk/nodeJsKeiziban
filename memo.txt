@@ -1,0 +1,53 @@
+
+
+node.js
+Express node.jsのためのwebアプリケーションフレームワーク
+ejs テンプレートエンジン
+Eclipse 統合開発環境
+	Nodeclipseプラグイン
+(一部ファイルの編集で秀丸エディタを使用した)
+
+Node.jsのフレームワークExpressをEclipseで実行する
+http://tikuflower.blogspot.jp/2014/05/nodejsexpresseclipse.html
+
+
+
+
+
+はじめに
+スレッドフロート型掲示板
+
+システムの概要
+
+システムの実現法
+
+実装
+
+おわりに
+
+プログラム作成には以下のページを参考にしている．
+プログラムの一部にはこのページにあるソースコードを使用した．
+
+「ビギナーのための Node.jsプログラミング入門」グループ 
+http://libro.tuyano.com/index2?id=1115003
+
+Node.js/ExpressJSでのファイルのアップロードAdd Star
+http://d.hatena.ne.jp/zebevogue/20120828/1346140796
+
+
+
+
+
+セキュリティー対策
+XSS
+SQLインジェクション
+
+
+ログイン画面を作成してアカウント管理
+
+cssによるデザイン
+
+ajaxを使った非同期通信によるシームレスな画面遷移
+
+スレッドを最終投稿時間順に並び替える
+

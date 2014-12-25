@@ -1,0 +1,52 @@
+<!DOCTYPE html><!-- ドキュメントタイプを宣言する(html5) -->
+	<head>
+		<title>oneThread</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body>
+		<a href="/allThread">スレッド一覧へ</a>
+		<p><%= thread_name %></p>
+
+		<table  border="1" id = "allThread">
+			<tr>
+				<th>内容</th>
+				<th>投稿者</th>
+			</tr>
+				<% for (var i=0; i<data.length; i++){ %>
+				<tr>
+					<td>
+						<%= data[i].comment %>
+						<% if(data[i].image_path != null){ %>
+							<br>
+							<img src="../<%= data[i].image_path %>">
+						<% } %>
+						<!--img src="../uploaded/images.jpg"-->
+					</td>
+					<td><%= data[i].user_name %></td>
+				</tr>
+				<% } %>
+		</table>
+		
+		<p>返信フォーム</p>
+		<form method="post" action="/addReply" enctype="multipart/form-data">
+			<input type="hidden" name="title" value="<%= thread_name  %>">
+			<table border="1">
+				<tr>
+					<td>名前</td>
+					<td><input type="text" name="user_name"></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td><textarea name="comment" cols="25" rows="5"></textarea></td>
+				</tr>
+				<tr>
+					<td>画像</td>
+					<td><input type="file" name="image"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="書き込む"></tr>
+			</table>
+		</form>
+	<body>
+</html>
