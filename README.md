@@ -20,7 +20,7 @@
 	+ oneThread.js(角スレッド内部表示機能)
 	+ resultSearch.js(スレッド検索機能)
 	+ user.js
-+views(画面表示関係のテンプレートをこのフォルダに入れる．)
++ views(画面表示関係のテンプレートをこのフォルダに入れる．)
 	+ allThread.ejs(スレッド一覧画面)
 	+ index.ejs
 	+ oneThread.ejs(各スレッド内部画面)
@@ -47,7 +47,7 @@ all_thread_table(スレッド一覧テーブル)
 |image_path|アップロードされた画像のパス|
 
 
-[image](keiziban.png)
+![image](./sampleImage/allThread01.png)
 
 ## 参考URL
 [「ビギナーのための Node.js プログラミング入門」グループ](http://libro.tuyano.com/index2?id=1115003)  
